@@ -10,9 +10,9 @@
 </head>
 
 <body>
-  <!-- Wrap the entire page content in a new div with the page class. Remember to add the closing tag -->
-  <div class="header">
-    <div class="nav">
+  <div class="page">
+  <header class="header">
+    <nav class="nav">
       <img
         src="./images/logo.png"
         alt="Practicum Library Logo"
@@ -25,7 +25,7 @@
         <a class="nav__link">About</a>
         <a class="nav__link">Contacts</a>
       </div>
-    </div>
+    </nav>
     <h1 class="header__title">Welcome to the Practicum Library</h1>
     <p class="header__description">
       We're pleased to open our library doors to everyone! Come and expand
@@ -39,14 +39,14 @@
         200 Success Avenue, The Town of Practicum
       </div>
     </div>
-  </div>
+  </header>
 
-  <div class="content">
-    <div class="staff">
+  <main class="content">
+    <article class="staff">
       <h2 class="staff__title">Staff picks</h2>
       <h3 class="staff__subtitle">That our readers love</h3>
       <!-- Wrap those cards! -->
-      <div class="card">
+      <section class="card">
         <div class="card__content">
           <h4 class="card__title">Introduction to Algorithms</h4>
           <p class="card__text">
@@ -61,9 +61,9 @@
             Clifford Stein
           </p>
         </div>
-      </div>
+      </section>
 
-      <div class="card">
+      <section class="card">
         <div class="card__content">
           <h4 class="card__title">
             The Structure and Interpretation of Computer Programs (SICP)
@@ -79,9 +79,9 @@
             Harold Abelson, Gerald Jay Sussman, Julie Sussman
           </p>
         </div>
-      </div>
+      </section>
 
-      <div class="card">
+      <section class="card">
         <div class="card__content">
           <h4 class="card__title">
             The Clean Coder: A Code of Conduct for Professional
@@ -96,9 +96,9 @@
           </p>
           <p class="card__footer">Steve McConnell</p>
         </div>
-      </div>
+      </section>
 
-      <div class="card">
+      <section class="card">
         <div class="card__content">
           <h4 class="card__title">
             Code Complete: A Practical Handbook of Software Construction
@@ -112,11 +112,11 @@
           </p>
           <p class="card__footer">Steve McConnell</p>
         </div>
-      </div>
-    </div>
+      </section>
+    </article>
 
-    <div class="events">
-      <div class="events__content">
+    <article class="events">
+      <section class="events__content">
         <h3 class="events__heading">Upcoming events:</h3>
         <h2 class="events__title">
           In honor of Joan Feynman: Women in astrophysics
@@ -143,11 +143,11 @@
           century.
         </p>
         <a href="#" class="events__more">More events &rarr;</a>
-      </div>
+      </section>
       <!-- Start creating the composition here -->
-    </div>
+    </article>
 
-    <div class="membership">
+    <article class="membership">
       <h2 class="membership__title">Becoming a library member is easy!</h2>
       <ul class="membership__steps">
         <li class="step">
@@ -189,10 +189,10 @@
           </p>
         </li>
       </ul>
-    </div>
-    <div class="about">
+    </article>
+    <article class="about">
       <h2 class="about__title">About the library</h2>
-      <div class="about__content">
+      <section class="about__content">
         <p class="about__paragraph">
           Libraries are essential establishments in practically every city,
           and Practicum's library is no exception. It first opened its doors
@@ -210,12 +210,13 @@
           astrophysicist and the first woman to be elected as an officer of
           the American Geophysical Union.
         </p>
-      </div>
+      </section>
       <!-- <div class="about__circle"></div> -->
-    </div>
-  </div>
-  <div class="footer">
+    </article>
+  </main>
+  <footer class="footer">
     <!-- The time to mark up the footer has come, you can do it 💪 -->
+  </footer>
   </div>
 </body>
 
