@@ -2,7 +2,7 @@
 .page {
   min-width: 1100px;
   max-width: 1600px;
-  margin: auto;
+  margin: 0 auto;
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -256,21 +256,28 @@
 }
 
 .person_name_feynman {
-  position: relative;
-  top: -19px;
-  z-index: 1;
+  top: -30px;
+  left: 319px;
 }
 
 .person_name_burbidge {
+  top: 96px;
+  right: 125px;
 }
 
 .person_name_cannon {
+  bottom: 18px;
+  right: 216px;
 }
 
 .person_name_mitchell {
+  bottom: 82px;
+  left: 142px;
 }
 
 .person_name_tarter {
+  top: 79px;
+  left: 159px;
 }
 
 .person__image {
@@ -393,23 +400,27 @@
 }
 
 .footer__columns {
+  margin: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  
 }
 
 .footer__column_hours {
+  margin-right: 100px;
+
   line-height: 2;
 }
 
 .footer__column_social {
+  margin-right: 0;
   line-height: 2;
 }
 
 .footer__logo {
+  margin-right: 500px;
   max-width: 153px;
-  
 }
 
 .footer__list {
@@ -418,8 +429,6 @@
   margin: 0;
 }
 
-.footer__list-item {
-}
 
 .footer__column-heading {
   margin: 0;
@@ -437,7 +446,9 @@
 }
 
 .footer__social-icon {
+  padding-right: 15px;
 }
 
 .footer__copyrights {
+  margin-top: 100px;
 }
