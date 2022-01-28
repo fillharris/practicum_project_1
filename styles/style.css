@@ -67,7 +67,7 @@
   top: 135px;
   right: 20px;
   max-width: 636px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .header__footer {
@@ -203,16 +203,18 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 12px;
+  width: 24px;
+  height: 24px;
 }
 
 .event-info__icon_calendar {
   background-image: url(../images/icon_calendar.svg);
-  max-width: 24px;
+  
 }
 
 .event-info__icon_pin {
   background-image: url(../images/icon_pin.svg);
-  max-width: 24px;
+ 
 }
 
 .event-info__text {
@@ -315,20 +317,19 @@
   font-size: 44px;
   font-weight: 500;
   line-height: 52px;
-  padding-bottom: 100px;
 }
 
 .membership__steps {
   list-style-type: none;
   padding: 0;
-  margin: 100 0 0;
+  margin: 100px 0 0;
   display: flex;
   column-gap: 40px;
   justify-content: center;
 }
 
 .step {
-  width: 220px;
+  flex-basis: 20%;
 }
 
 .step__title {
@@ -359,6 +360,7 @@
 }
 
 .about__title {
+  margin-top: 0;
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
@@ -376,9 +378,14 @@
 }
 
 .about__paragraph {
+  margin-top: 0;
   margin-bottom: 32px;
   position: relative;
   z-index: 1;
+}
+
+.about__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .about__circle {
@@ -401,24 +408,22 @@
 .footer__columns {
   margin: auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
 }
 
 .footer__column_hours {
-  margin-right: 100px;
+  margin-left: auto;
 
   line-height: 2;
 }
 
 .footer__column_social {
-  margin-right: 0;
+  margin-left: 100px;
   line-height: 2;
 }
 
 .footer__logo {
-  margin-right: 500px;
   max-width: 153px;
 }
 
@@ -446,6 +451,7 @@
 
 .footer__social-icon {
   padding-right: 15px;
+  width: 15px;
 }
 
 .footer__copyrights {
